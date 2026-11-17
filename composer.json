@@ -1,0 +1,38 @@
+{
+  "name": "lfiweb/spreadsheet-writer",
+  "description": "Lightweight writer for XLSX and ODS spreadsheet files without formulas or reading support",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "php": "^8.3",
+    "ext-mbstring": "*",
+    "ext-zlib": "*"
+  },
+  "require-dev": {
+    "ext-dom": "*",
+    "ext-zip": "*",
+    "phpoffice/phpspreadsheet": "^5",
+    "phpunit/phpunit": "10.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpreadsheetWriter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SpreadsheetWriter\\Test\\": "tests/phpunit/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "platform": {
+      "php": "8.3"
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
